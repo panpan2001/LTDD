@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "205571578465",
+    "firebase_url": "https://fashionrecommend-8629d-default-rtdb.firebaseio.com",
+    "project_id": "fashionrecommend-8629d",
+    "storage_bucket": "fashionrecommend-8629d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205571578465:android:037f45af10976e36052820",
+        "android_client_info": {
+          "package_name": "com.midterm.fashionrecommend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205571578465-bhckksd82b1nsug6qhgt58k37cnpm37k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnS498BkdYR7z857GQbM9XLCKkBbeed3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205571578465-bhckksd82b1nsug6qhgt58k37cnpm37k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
