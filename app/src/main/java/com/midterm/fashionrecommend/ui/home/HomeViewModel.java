@@ -71,7 +71,7 @@ public class HomeViewModel extends ViewModel  implements IBestDealCallbackListen
         messageError.setValue(message);
     }
 
-    public MutableLiveData<List<PopularCategoryModel>> getPopularCategoryList(){
+    public MutableLiveData<List<PopularCategoryModel>> getPopularList(){
         if(popularCategoryList == null) {
             popularCategoryList = new MutableLiveData<>();
             messageError = new MutableLiveData<>();

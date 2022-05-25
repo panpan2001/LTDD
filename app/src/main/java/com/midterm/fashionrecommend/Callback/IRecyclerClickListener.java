@@ -1,5 +1,7 @@
 package com.midterm.fashionrecommend.Callback;
 
-public interface IRecyclerClickListener {
+import android.view.View;
 
+public interface IRecyclerClickListener {
+    void onItemClickListener(View view, int pos);
 }
