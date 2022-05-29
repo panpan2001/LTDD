@@ -11,9 +11,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_food_list">Food List</string>
+    <string name="menu_clothes_list">clothes List</string>
     <string name="sign_out">Sign out</string>
-    <string name="menu_food_detail">Food Detail</string>
+    <string name="menu_clothes_detail">clothes Detail</string>
     <string name="menu_view_orders">View Orders</string>
 
     <string name="action_search">Search</string>

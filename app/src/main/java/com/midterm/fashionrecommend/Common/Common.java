@@ -7,6 +7,8 @@ import android.text.Spanned;
 import android.text.style.StyleSpan;
 import android.widget.TextView;
 
+import com.midterm.fashionrecommend.Model.CategoryModel;
+import com.midterm.fashionrecommend.Model.ClothesModel;
 import com.midterm.fashionrecommend.Model.UserModel;
 
 import java.math.RoundingMode;
@@ -23,8 +25,9 @@ public class Common {
     public static final String COMMENT_REF = "Comments";
     public static final String ORDER_REF = "Order";
     public static UserModel currentUser;
+    public static CategoryModel categorySelected;
+    public static ClothesModel selectedClothes;
 //    public static CategoryModel categorySelected;
-//    public static FoodModel selectedFood;
 
     public static String formatPrice(double price) {
         if(price != 0) {

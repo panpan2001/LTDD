@@ -13,8 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.midterm.fashionrecommend.Callback.IRecyclerClickListener;
 import com.midterm.fashionrecommend.Common.Common;
+import com.midterm.fashionrecommend.EventBus.CategoryClick;
 import com.midterm.fashionrecommend.Model.CategoryModel;
 import com.midterm.fashionrecommend.R;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -48,8 +51,8 @@ public class MyCategoriesAdapter extends RecyclerView.Adapter<MyCategoriesAdapte
         holder.setListener(new IRecyclerClickListener() {
             @Override
             public void onItemClickListener(View view, int pos) {
-               //openAfter Common.categorySelected = categoryModelList.get(pos);
-               //openAfter EventBus.getDefault().postSticky(new CategoryClick(true, categoryModelList.get(pos)));
+               Common.categorySelected = categoryModelList.get(pos);
+               EventBus.getDefault().postSticky(new CategoryClick(true, categoryModelList.get(pos)));
             }
         });
     }
