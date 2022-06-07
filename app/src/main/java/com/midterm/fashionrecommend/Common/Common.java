@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.midterm.fashionrecommend.Model.CategoryModel;
 import com.midterm.fashionrecommend.Model.ClothesModel;
+import com.midterm.fashionrecommend.Model.SizeModel;
 import com.midterm.fashionrecommend.Model.UserModel;
 
 import java.math.RoundingMode;
@@ -40,27 +41,14 @@ public class Common {
     }
 
 
-//    public static double calculateExtraPrice(SizeModel userSelectedSize, List<AddonModel> userSelectedAddon) {
-//        Double result = 0.0;
-//        if(userSelectedSize == null && userSelectedAddon == null)
-//            return 0.0;
-//        else if(userSelectedSize == null) {
-//            //If userSelectedAddon != null, we need sum price
-//            for(AddonModel addonModel : userSelectedAddon) {
-//                result+=addonModel.getPrice();
-//            }
-//            return result;
-//        } else if (userSelectedAddon == null) {
-//            return  userSelectedSize.getPrice()*1.0;
-//        } else {
-//            //If both size and addon is select
-//            result = userSelectedSize.getPrice()*1.0;
-//            for(AddonModel addonModel : userSelectedAddon) {
-//                result += addonModel.getPrice();
-//            }
-//            return result;
-//        }
-//    }
+    public static double calculateExtraPrice(SizeModel userSelectedSize) {
+        Double result = 0.0;
+        if(userSelectedSize == null ){
+            return 0.0;
+        } else {
+            return userSelectedSize.getPrice()*1.0;
+        }
+    }
 
     public static void setSpanString(String welcome, String name, TextView txt_user) {
         SpannableStringBuilder builder = new SpannableStringBuilder();

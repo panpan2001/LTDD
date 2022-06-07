@@ -21,6 +21,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.midterm.fashionrecommend.Common.Common;
 import com.midterm.fashionrecommend.EventBus.CategoryClick;
+import com.midterm.fashionrecommend.EventBus.ClothesItemClick;
 import com.midterm.fashionrecommend.EventBus.MenuItemBack;
 import com.midterm.fashionrecommend.databinding.ActivityHomeBinding;
 
@@ -59,7 +60,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home,  R.id.nav_menu, R.id.nav_clothes_list, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home,  R.id.nav_menu, R.id.nav_clothes_list, R.id.nav_gallery, R.id.nav_slideshow,
+                R.id.nav_clothes_detail)
                 .setOpenableLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
@@ -157,5 +159,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         menuClickId = -1;
         if(getSupportFragmentManager().getBackStackEntryCount() > 0)
             navController.popBackStack(R.id.nav_home, true);
+    }
+
+    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
+    public void onFoodItemClick(ClothesItemClick event) {
+        if(event.isSuccess()) {
+            navController.navigate(R.id.nav_clothes_detail);
+        }
     }
 }
