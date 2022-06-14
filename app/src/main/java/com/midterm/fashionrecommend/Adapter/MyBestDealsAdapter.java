@@ -11,8 +11,11 @@ import androidx.annotation.NonNull;
 
 import com.asksira.loopingviewpager.LoopingPagerAdapter;
 import com.bumptech.glide.Glide;
+import com.midterm.fashionrecommend.EventBus.BestDealItemClick;
 import com.midterm.fashionrecommend.Model.BestDealModel;
 import com.midterm.fashionrecommend.R;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -47,7 +50,7 @@ public class MyBestDealsAdapter extends LoopingPagerAdapter<BestDealModel> {
         txt_best_deal.setText(getItemList().get(i).getName());
 
         view.setOnClickListener(view1 -> {
-           //openAfterCode//EventBus.getDefault().postSticky(new BestDealItemClick(getItemList().get(i)));
+           EventBus.getDefault().postSticky(new BestDealItemClick(getItemList().get(i)));
         });
     }
 

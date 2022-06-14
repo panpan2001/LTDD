@@ -11,8 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.midterm.fashionrecommend.Callback.IRecyclerClickListener;
+import com.midterm.fashionrecommend.EventBus.PopularCategoryClick;
 import com.midterm.fashionrecommend.Model.PopularCategoryModel;
 import com.midterm.fashionrecommend.R;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -45,13 +48,13 @@ public class MyPopularCategoriesAdapter extends RecyclerView.Adapter<MyPopularCa
                 .into(holder.category_image);
         holder.txt_category_name.setText(popularCategoryModelList.get(position).getName());
 
-        /*holder.setListener(new IRecyclerClickListener() {
+        holder.setListener(new IRecyclerClickListener() {
             @Override
             public void onItemClickListener(View view, int pos) {
                 //Toast.makeText(context, ""+popularCategoryModelList.get(pos).getName(), Toast.LENGTH_SHORT).show();
-                //openAfterCode//EventBus.getDefault().postSticky(new PopularCategoryClick(popularCategoryModelList.get(pos)));
+                EventBus.getDefault().postSticky(new PopularCategoryClick(popularCategoryModelList.get(pos)));
             }
-        }); openAfterCode*/
+        });
     }
 
     @Override
