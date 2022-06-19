@@ -10,21 +10,29 @@
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/drawable/ic_star_black_24dp.xml" value="0.1445" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/activity_home.xml" value="0.17074275362318841" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/app_bar_home.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/bottom_sheet_comment_fragment.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/content_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_cart.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_clothes_detail.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_clothes_list.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_menu.xml" value="0.16847826086956522" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/fragment_view_order.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/frament_clothes_detail.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_best_deal_item.xml" value="0.17074275362318841" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_cart_item.xml" value="0.2" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_category_item.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_clothes_item.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_comment_item.xml" value="0.16847826086956522" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_order_item.xml" value="0.16847826086956522" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_place_order.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_popular_categories_item.xml" value="0.17074275362318841" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_rating.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/layout_register.xml" value="0.17074275362318841" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/layout/nav_header_home.xml" value="0.16847826086956522" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/menu/cart_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/menu/home.xml" value="0.20416666666666666" />
         <entry key="..\:/projectAndroid/FashionRecommend/app/src/main/res/menu/search_menu.xml" value="0.20416666666666666" />
       </map>

@@ -14,6 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.FashionRecommend.AppBarOverlay." parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ToolbarColoredBackArrow" parent="Theme.FashionRecommend">
+        <item name ="android:textColorSecondary">@android:color/black</item>
+    </style>
+
+    <style name="Theme.FashionRecommend.PopupOverlay." parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="Theme.FashionRecommend.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
